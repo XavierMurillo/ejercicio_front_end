@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import suma from './utils/sum.js';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//Utilizamos el arreglo para generar la suma y mostrarla en consola, adicionalmente repetí el proceso en la función app para que se vea en pantalla
+var MyArray = [2,4,6,8,10,12];
+console.log(suma(...MyArray)+ " suma desde index utilizando export e import");
 ReactDOM.render(
   <React.StrictMode>
     <App />
